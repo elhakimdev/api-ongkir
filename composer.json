@@ -1,0 +1,36 @@
+{
+	"name": "elhakim_dev/api-ongkir",
+	"description": "A minimal api for shipment integration",
+	"type": "library",
+	"require": {
+		"orchestra/testbench": "^6.22",
+		"phpunit/phpunit": "^9.5"
+	},
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "elhakimdev",
+			"email": "abdulelhakim68@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"ElhakimDev\\ApiShipment\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"ElhakimDev\\ApiShipment\\Test\\": "tests/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"ElhakimDev\\ApiShipment\\ShipmentServiceProvider"
+			]
+		},
+		"aliases": {
+			"Shipment": "ElhakimDev\\ApiShipment\\ShipmentFacade"
+		}
+	}
+}
