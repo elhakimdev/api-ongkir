@@ -3,7 +3,9 @@
 namespace ElhakimDev\ApiShipment;
 
 use Illuminate\Support\Facades\Facade;
-
+/**
+ * @method \Illuminate\Http\Client\Response|void call(string $method, string $uri, mixed $payload)
+ */
 class ShipmentFacade extends Facade
 {
        protected static function getFacadeAccessor()
