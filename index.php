@@ -1,6 +1,7 @@
 <?php
 
 use ElhakimDev\ApiShipment\Shipment;
+use ElhakimDev\ApiShipment\ShipmentFacade;
 
 require_once '../api-ongkir/vendor/autoload.php';
 // contoh penggunaan service nya kaak gini ya mas rian 
