@@ -38,7 +38,7 @@ A few examples of useful commands and/or tasks.
 
 before use this package, dont forget to adding a environment variable 
 ```
-PROVIDER_API_KEY=0fa2fbc1bf32432b00e487b7cc964179
+PROVIDER_API_KEY=your-api-key
 PROVIDER_ACCOUNT_TYPE=starter
 PROVIDER_NAME=rajaongkir
 ```
