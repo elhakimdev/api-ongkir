@@ -28,9 +28,6 @@
 			"providers": [
 				"ElhakimDev\\ApiShipment\\ShipmentServiceProvider"
 			]
-		},
-		"aliases": {
-			"Shipment": "ElhakimDev\\ApiShipment\\ShipmentFacade"
 		}
 	}
 }

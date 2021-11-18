@@ -2,8 +2,9 @@
 
 namespace ElhakimDev\ApiShipment\Test;
 
-use ElhakimDev\ApiShipment\ShipmentFacade;
+use Dotenv\Dotenv;
 use ElhakimDev\ApiShipment\ShipmentServiceProvider;
+use Illuminate\Container\Container;
 use Orchestra\Testbench\TestCase as TestbenchTestCase;
 
 class TestCase extends TestbenchTestCase
@@ -12,10 +13,8 @@ class TestCase extends TestbenchTestCase
        {
               return [ShipmentServiceProvider::class];
        }
-       protected function getPackageAliases($app)
+       protected function setUp(): void
        {
-              return [
-                     "Shipment" => ShipmentFacade::class
-              ];
+              (Dotenv::createImmutable(__DIR__ . '../../'))->load();
        }
 }

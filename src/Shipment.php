@@ -20,7 +20,7 @@ class Shipment
     /**
      * Call request
      */
-    public function call(string $method, string $uri, mixed $payload)
+    public function call(string $method, string $uri, $payload)
     {
         if($method === 'GET'){
             return Http::withHeaders(['key'=> $this->key])->get($uri);
