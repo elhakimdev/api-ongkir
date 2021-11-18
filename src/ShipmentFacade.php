@@ -10,6 +10,6 @@ class ShipmentFacade extends Facade
 {
        protected static function getFacadeAccessor()
        {
-              return 'ShipmentFacade';
+              return 'Shipment';
        }
 }
